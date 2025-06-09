@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_dual_ram_controller_behav/xsimk.exe -simmode gui -wdb tb_dual_ram_controller_behav.wdb -simrunnum 0 -socket 59566
+Design successfully loaded
+Design Loading Memory Usage: 28780 KB (Peak: 28780 KB)
+Design Loading CPU Usage: 890 ms

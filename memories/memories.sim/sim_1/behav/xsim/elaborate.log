@@ -1,7 +1,7 @@
 Vivado Simulator v2024.2.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot rom_tb_behav xil_defaultlib.rom_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_dual_ram_controller_behav xil_defaultlib.tb_dual_ram_controller xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -13,12 +13,15 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
 Compiling package vl.vl_types
 Compiling module xil_defaultlib.glbl
 Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_output_stage(...
 Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_softecc_outpu...
 Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_9.blk_mem_gen_v8_4_9(C_FAMILY="art...
-Compiling module xil_defaultlib.blk_mem_gen_0
-Compiling architecture behavioral of entity xil_defaultlib.rom_tb
-Built simulation snapshot rom_tb_behav
+Compiling module xil_defaultlib.blk_mem_gen_1
+Compiling architecture behavioral of entity xil_defaultlib.dual_ram_controller [dual_ram_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_dual_ram_controller
+Built simulation snapshot tb_dual_ram_controller_behav

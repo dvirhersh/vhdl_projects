@@ -1,0 +1,117 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x65E20B0613F4468E",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../memories.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2"
+    },
+    "design_tree": {
+      "rom_to_ram_0": "",
+      "dual_ram_controller_0": ""
+    },
+    "ports": {
+      "RST_0": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "CLK_0": {
+        "type": "clk",
+        "direction": "I"
+      }
+    },
+    "components": {
+      "rom_to_ram_0": {
+        "vlnv": "xilinx.com:module_ref:rom_to_ram:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_rom_to_ram_0_0",
+        "xci_path": "ip\\design_1_rom_to_ram_0_0\\design_1_rom_to_ram_0_0.xci",
+        "inst_hier_path": "rom_to_ram_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "rom_to_ram",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "DATA": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "dual_ram_controller_0": {
+        "vlnv": "xilinx.com:module_ref:dual_ram_controller:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_dual_ram_controller_0_0",
+        "xci_path": "ip\\design_1_dual_ram_controller_0_0\\design_1_dual_ram_controller_0_0.xci",
+        "inst_hier_path": "dual_ram_controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dual_ram_controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RST",
+                "value_src": "constant"
+              }
+            }
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "DATA": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "CLK_0_1": {
+        "ports": [
+          "CLK_0",
+          "rom_to_ram_0/CLK",
+          "dual_ram_controller_0/CLK"
+        ]
+      },
+      "RST_0_1": {
+        "ports": [
+          "RST_0",
+          "rom_to_ram_0/RST",
+          "dual_ram_controller_0/RST"
+        ]
+      },
+      "rom_to_ram_0_DATA": {
+        "ports": [
+          "rom_to_ram_0/DATA",
+          "dual_ram_controller_0/DATA"
+        ]
+      }
+    }
+  }
+}
