@@ -1,5 +1,3 @@
-My projects
+VHDL projects:
 
-- logtel
-- xilinx
-- others
+from Logtel and Xilinx, Final project
