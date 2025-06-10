@@ -41,17 +41,18 @@ end design_for_rom;
 
 architecture Behavioral of design_for_rom is
 
-    COMPONENT blk_mem_gen_0
-    PORT (
-        clka  : IN STD_LOGIC;
-        addra : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-        douta : OUT STD_LOGIC_VECTOR(7 DOWNTO 0) 
-    );
-    END COMPONENT;
+    -- Component Declaration for ROM
+    component blk_mem_gen_0
+        port (
+            clka  : in  STD_LOGIC;
+            addra : in  STD_LOGIC_VECTOR(9 downto 0);
+            douta : out STD_LOGIC_VECTOR(7 downto 0)
+        );
+    end component;
 
     -- Internal Signals
-    signal addr_counter : STD_LOGIC_VECTOR(9 downto 0) := (others => '1');
-    signal rom_data     : STD_LOGIC_VECTOR(7 downto 0) := (others => '0') ;  
+    signal addr_counter : unsigned(9 downto 0) := (others => '0');
+    signal rom_data     : STD_LOGIC_VECTOR(7 downto 0);
 
 begin
     process(CLK)
@@ -59,22 +60,19 @@ begin
         if rising_edge(CLK) then
             if RST = '1' then
                 addr_counter <= (others => '0');
-                rom_data     <= (others => '0');
-            else
-                if addr_counter < "1111111111" then -- 1023
-                    addr_counter <= std_logic_vector(unsigned(addr_counter) + 1);
-                end if;
+            elsif addr_counter < 1023 then
+                addr_counter <= addr_counter + 1;
             end if;
         end if;
     end process;
 
     DATA <= rom_data;
 
-    rom_inst : blk_mem_gen_0
-        port map (
-            clka  => CLK,
-            addra => addr_counter,
-            douta => rom_data
-        );
+    rom_inst_3 : blk_mem_gen_0
+    port map (
+        clka  => CLK,
+        addra => std_logic_vector(addr_counter),
+        douta => rom_data
+    );
 
 end Behavioral;
