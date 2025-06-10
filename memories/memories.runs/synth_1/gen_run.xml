@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1749475790">
-  <File Type="PA-TCL" Name="rom_to_ram.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="rom_to_ram_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="rom_to_ram_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="design_for_rom_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="design_for_rom_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="rom_to_ram.tcl"/>
   <File Type="RDS-RDS" Name="rom_to_ram.vds"/>
-  <File Type="RDS-UTIL" Name="rom_to_ram_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="rom_to_ram_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="rom_to_ram.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="rom_to_ram_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="rom_to_ram_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci">

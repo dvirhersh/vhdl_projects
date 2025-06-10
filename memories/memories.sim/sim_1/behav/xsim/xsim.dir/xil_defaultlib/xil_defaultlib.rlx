@@ -3,7 +3,7 @@
 Nov  8 2024
 22:36:57
 C:/VHDL_PROJECTS/vivado_projects/memories/memories.gen/sources_1/ip/blk_mem_gen_0_1/sim/blk_mem_gen_0.v,1749460558,verilog,,,,blk_mem_gen_0,,,,,,,,
-C:/VHDL_PROJECTS/vivado_projects/memories/memories.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1749469456,verilog,,,,blk_mem_gen_1,,,,,,,,
+C:/VHDL_PROJECTS/vivado_projects/memories/memories.gen/sources_1/ip/blk_mem_gen_1_1/sim/blk_mem_gen_1.v,1749551927,verilog,,,,blk_mem_gen_1,,,,,,,,
 C:/VHDL_PROJECTS/vivado_projects/memories/memories.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
-C:/VHDL_PROJECTS/vivado_projects/memories/rtl/dual_ram_controller.vhd,1749477774,vhdl,,,,dual_ram_controller,,,,,,,,
-C:/VHDL_PROJECTS/vivado_projects/memories/sim/tb_dual_ram_controller.vhd,1749479054,vhdl,,,,tb_dual_ram_controller,,,,,,,,
+C:/VHDL_PROJECTS/vivado_projects/memories/rtl/design_for_ram.vhd,1749551327,vhdl,,,,design_for_ram,,,,,,,,
+C:/VHDL_PROJECTS/vivado_projects/memories/sim/ram_tb_4.vhd,1749551501,vhdl,,,,ram_tb_4,,,,,,,,
