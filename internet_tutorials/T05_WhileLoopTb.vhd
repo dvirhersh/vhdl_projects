@@ -1,0 +1,18 @@
+entity T05_WhileLoopTb is
+end entity;
+
+architecture sim of T05_WhileLoopTb is
+begin
+
+    process
+        variable i : integer := 0;
+    begin
+        while i < 10 loop
+            report "i = " & integer'image(i);
+            i := i + 2;
+        end loop ;
+	wait;
+    end process;
+
+end architecture;
+ 
