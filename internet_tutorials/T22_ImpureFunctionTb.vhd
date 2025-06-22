@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity T21_FunctionTb is
+entity T22_ImpureFunctionTb is
 end entity;
 
-architecture sim of T21_FunctionTb is
+architecture sim of T22_ImpureFunctionTb is
 
     constant ClockFrequency : integer := 100;
     constant ClockPeriod    : time    := 1000 ms / ClockFrequency;
@@ -23,17 +23,17 @@ architecture sim of T21_FunctionTb is
 
 begin
 
-    i_TrafficLigths : entity work.T21_TrafficLights(rtl)
-        generic map(ClockFrequency => ClockFrequency)
-        port map (
-            Clk         => Clk,
-            nRst        => nRst,
-            NorthRed    => NorthRed,
-            NorthYellow => NorthYellow,
-            NorthGreen  => NorthGreen,
-            WestRed     => WestRed,
-            WestYellow  => WestYellow,
-            WestGreen   => WestGreen);
+  i_TrafficLigths : entity work.T22_TrafficLights(rtl)
+    generic map(ClockFrequency => ClockFrequency)
+    port map (
+        Clk         => Clk,
+        nRst        => nRst,
+        NorthRed    => NorthRed,
+        NorthYellow => NorthYellow,
+        NorthGreen  => NorthGreen,
+        WestRed     => WestRed,
+        WestYellow  => WestYellow,
+        WestGreen   => WestGreen);
             
     Clk <= not Clk after ClockPeriod / 2;
 
