@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity T20_FiniteStateMachineTb is
+entity T21_FunctionTb is
 end entity;
 
-architecture sim of T20_FiniteStateMachineTb is
+architecture sim of T21_FunctionTb is
 
     constant ClockFrequency : integer := 100;
     constant ClockPeriod    : time    := 1000 ms / ClockFrequency;
@@ -19,6 +19,7 @@ architecture sim of T20_FiniteStateMachineTb is
     signal WestYellow  : std_logic;
     signal WestGreen   : std_logic;
 
+    signal Counter : integer range 0 to ClockFrequency * 60;
 
 begin
 
