@@ -1,3 +1,3 @@
-VHDL projects:
+VHDL projects
 
-from Logtel and Xilinx, Final project
+Logtel / Xilinx / Internet
